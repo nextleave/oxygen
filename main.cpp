@@ -16,7 +16,16 @@ int main() {
         cout << i<<endl;
     }
     int a[]{3, 5, 8};
-    cout << a;
+    for (auto &i : a) {
+        cout<< i <<endl;
+    }
+    cout << a<<endl;
+    int * p = new int[1];
+    if (p != NULL) {
+       *p = 8;
+       cout<< *p<<endl;
+       delete p;
+    }
     return 0;
 }
 
